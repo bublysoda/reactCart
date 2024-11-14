@@ -1,0 +1,78 @@
+/* Shop.css */
+
+.all {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1800px;
+    margin: auto;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    transition: transform 0.2s;
+    min-height: 350px; 
+    width: 250px; 
+}
+
+.item:hover {
+    transform: scale(1.15);
+}
+
+.image{
+    object-fit: fill;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+.title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+    white-space: normal; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+}
+
+.rateAndPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rate {
+    font-size: 0.9em;
+    color: #ff9900;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
